@@ -8,11 +8,11 @@ public class App {
         CalculadorPreco descX = new CalculadorPreco(produto);
         CalculadorPreco descY = new CalculadorPreco(produto1);
 
-        CalculoDesconto descontoX = new DescontoX();
-        CalculoDesconto descontoY = new DescontoY();
+        CalculoDesconto descontoPrimavera = new PromocaoPrimavera();
+        CalculoDesconto descontoDomingo = new PromocaoDomingo();
 
-        descX.setCalculoDesconto(descontoX);
-        descY.setCalculoDesconto(descontoY);
+        descX.setCalculoDesconto(descontoPrimavera);
+        descY.setCalculoDesconto(descontoDomingo);
 
         System.out.println(descX.getCalculoDesconto().calculoDesconto(produto));
         System.out.println(descY.getCalculoDesconto().calculoDesconto(produto1));
