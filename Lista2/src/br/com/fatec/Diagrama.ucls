@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<class-diagram version="1.2.4" icons="true" always-add-relationships="false" generalizations="true" realizations="true" 
-  associations="true" dependencies="false" nesting-relationships="true" router="FAN">  
+<class-diagram version="1.2.4" icons="true" automaticImage="PNG" always-add-relationships="false" generalizations="true" 
+  realizations="true" associations="true" dependencies="false" nesting-relationships="true" router="FAN">  
   <class id="1" language="java" name="br.com.fatec.App" project="Lista2" file="/Lista2/src/br/com/fatec/App.java" 
     binary="false" corner="BOTTOM_RIGHT">    
-    <position height="97" width="113" x="210" y="138"/>    
+    <position height="97" width="113" x="147" y="231"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -12,7 +12,7 @@
   </class>  
   <class id="2" language="java" name="br.com.fatec.PromocaoPrimavera" project="Lista2" 
     file="/Lista2/src/br/com/fatec/PromocaoPrimavera.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="97" width="184" x="633" y="138"/>    
+    <position height="97" width="184" x="570" y="231"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -21,7 +21,7 @@
   </class>  
   <class id="3" language="java" name="br.com.fatec.CalculadorPreco" project="Lista2" 
     file="/Lista2/src/br/com/fatec/CalculadorPreco.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="115" width="230" x="363" y="138"/>    
+    <position height="115" width="230" x="300" y="231"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -30,7 +30,7 @@
   </class>  
   <class id="4" language="java" name="br.com.fatec.PromocaoDomingo" project="Lista2" 
     file="/Lista2/src/br/com/fatec/PromocaoDomingo.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="97" width="184" x="857" y="138"/>    
+    <position height="97" width="184" x="794" y="231"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -39,7 +39,7 @@
   </class>  
   <class id="5" language="java" name="br.com.fatec.Produto" project="Lista2" 
     file="/Lista2/src/br/com/fatec/Produto.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="133" width="146" x="363" y="293"/>    
+    <position height="133" width="146" x="300" y="386"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -48,33 +48,33 @@
   </class>  
   <interface id="6" language="java" name="br.com.fatec.CalculoDesconto" project="Lista2" 
     file="/Lista2/src/br/com/fatec/CalculoDesconto.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="79" width="184" x="633" y="293"/>    
+    <position height="79" width="184" x="570" y="386"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </interface>  
-  <realization id="7">    
-    <end type="SOURCE" refId="2"/>    
-    <end type="TARGET" refId="6"/>  
-  </realization>  
-  <association id="8">    
+  <association id="7">    
     <end type="SOURCE" refId="3" navigable="false">      
-      <attribute id="9" name="calculoDesconto"/>      
-      <multiplicity id="10" minimum="0" maximum="1"/>    
-    </end>    
-    <end type="TARGET" refId="6" navigable="true"/>    
-    <display labels="true" multiplicity="true"/>  
-  </association>  
-  <association id="11">    
-    <end type="SOURCE" refId="3" navigable="false">      
-      <attribute id="12" name="produto"/>      
-      <multiplicity id="13" minimum="0" maximum="1"/>    
+      <attribute id="8" name="produto"/>      
+      <multiplicity id="9" minimum="0" maximum="1"/>    
     </end>    
     <end type="TARGET" refId="5" navigable="true"/>    
     <display labels="true" multiplicity="true"/>  
   </association>  
+  <association id="10">    
+    <end type="SOURCE" refId="3" navigable="false">      
+      <attribute id="11" name="calculoDesconto"/>      
+      <multiplicity id="12" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="6" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <realization id="13">    
+    <end type="SOURCE" refId="2"/>    
+    <end type="TARGET" refId="6"/>  
+  </realization>  
   <realization id="14">    
     <end type="SOURCE" refId="4"/>    
     <end type="TARGET" refId="6"/>  
