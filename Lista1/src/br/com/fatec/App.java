@@ -6,7 +6,7 @@ import java.util.Calendar;
 
 public class App {
     public static void main(String[] args) {
-        ArrayList<ContaEstacionamento> ativos = new ArrayList();
+        ArrayList<ContaEstacionamento> ativos = new ArrayList<ContaEstacionamento>();
 
         int opVeiculo, opMenu = 50, opConta;
         String placa, modelo;
